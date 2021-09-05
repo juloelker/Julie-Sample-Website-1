@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('../images/background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #070707;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+
+p {
+  margin: 20px auto;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.clear-floats {
+  clear: both;
+}
+
+#main-header {
+  background-color: #3a8abc;
+  padding: 20px 0;
+}
+
+#main-header h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 900;
+}
+
+#navbar {
+  background-color: #3a8abc;
+  padding: 20px 0;
+}
+
+#navbar ul {
+  padding: 0;
+  list-style: none;
+}
+
+#navbar li {
+  display: inline;
+  font-weight: 700;
+  padding-right: 20px;
+}
+
+#navbar a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+#navbar a:visited {
+  /*I intentionally picked the same color for link and visited. 
+  For security reasons, I didn't want visited to be too obvious.*/
+  color: #fff;
+}
+
+#navbar a:hover {
+  color: #ff0000;
+}
+
+#navbar a:active {
+  color: #00ff00;
+}
+
+#main-section {
+  float: left;
+  margin: 0;
+}
+
+#main-section h2 {
+  text-align: center;
+  font-weight: 900;
+  margin: 20px 0;
+}
+
+#main-section p {
+  text-align: left;
+}
+
+#main-footer {
+  padding: 20px 0;
+  margin: 20px auto;
+  background-color: #3a8abc;
+}
+
+#main-footer p {
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  #main-section {
+    width: 90%;
+    float: none;
+  }
+}
